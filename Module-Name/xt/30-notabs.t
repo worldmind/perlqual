@@ -1,10 +1,12 @@
+#!/usr/bin/perl -w
+# test for presence of tabs in sources
+
 use strict;
 use warnings;
-
-use File::Spec;
-use FindBin ();
 use Test::More;
-use Test::NoTabs;
 
-all_perl_files_ok(qw/lib/);
+eval 'use Test::NoTabs';
+plan skip_all => 'Test::NoTabs required' if $@;
+
+all_perl_files_ok();
 

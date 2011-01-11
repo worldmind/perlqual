@@ -1,6 +1,14 @@
+#!/usr/bin/perl -w
+# test for syntax, strict and warnings
+
 use strict;
 use warnings;
+use Test::More;
 
-use Test::Strict;
+eval 'use Test::Strict';
+plan skip_all => 'Test::Strict required' if $@;
 
-all_perl_files_ok('lib'); # Syntax ok and use strict;
+$Test::Strict::TEST_WARNINGS = 1;
+
+all_perl_files_ok();
+

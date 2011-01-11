@@ -1,8 +1,12 @@
+#!/usr/bin/perl -w
+# test code for FIXME/BUG/TODO/XXX/NOTE labels
+
 use strict;
 use warnings;
+use Test::More;
 
-use Test::Fixme;
-run_tests(
-	where    => ['lib'],        # where to find files to check
-	match    => qr/FIXME/,   # what to check for
-);
+eval 'use Test::Fixme';
+plan skip_all => 'Test::Fixme required' if $@;
+
+run_tests( match => qr/TODO|FIXME|BUG|XXX|NOTE/ );
+
