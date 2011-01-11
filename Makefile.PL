@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 use inc::Module::Install;
+## use Module::Install::Catalyst;
 use Module::Install::AuthorTests;
 use Module::Install::AuthorRequires;
 
@@ -13,8 +14,14 @@ all_from $main_module;
 
 # just for example
 requires(
-    'Moose'                => 0,
+    'Catalyst::Runtime'    => '5.80029',
     'namespace::autoclean' => 0,
+
+    'Catalyst::Action::RenderView'     => 0,
+    'Catalyst::Plugin::ConfigLoader'   => 0,
+    'Catalyst::Plugin::Static::Simple' => 0,
+    'Config::General'                  => 0,
+    'Moose'                            => 0,
 );
 
 # just for example
@@ -53,7 +60,9 @@ if ($Module::Install::AUTHOR) {
     system("pod2text $main_module > README") and die $!;
 }
 
-auto_install;
+## catalyst;
+## install_script glob('script/*.pl');
 
+auto_install;
 WriteAll;
 
