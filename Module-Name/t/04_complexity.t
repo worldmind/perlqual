@@ -16,7 +16,7 @@ my @subs;
 
 foreach (@files) {
 	my $analysis = $analzyer->analyze_files($_);
-	push @subs, $_ foreach (@{$analysis->subs});
+	push @subs, $_ foreach ( @{$analysis->subs} );
 }
 
 plan tests => (scalar @subs)*2;
