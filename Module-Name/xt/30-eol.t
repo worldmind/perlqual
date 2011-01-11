@@ -5,8 +5,8 @@ use strict;
 use warnings;
 use Test::More;
 
-eval 'use Test::EOL';
+eval 'use Test::EOL';    ## no critic
 plan skip_all => 'Test::EOL required' if $@;
 
-all_perl_files_ok( { trailing_whitespace => 1 } );
+all_perl_files_ok( { trailing_whitespace => 1 }, qw/ lib t xt / );
 

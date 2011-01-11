@@ -5,8 +5,9 @@ use strict;
 use warnings;
 use Test::More;
 
-eval 'use Test::Fixme';
+eval 'use Test::Fixme';    ## no critic
 plan skip_all => 'Test::Fixme required' if $@;
 
-run_tests( match => qr/TODO|FIXME|BUG|XXX|NOTE/ );
+# test files in t/ and xt/ could have TODO/SKIP and other words, so we testing only lib/
+run_tests( match => qr/TODO|FIXME|BUG\b|XXX|NOTE/, where => [qw/ lib /] );
 

@@ -5,18 +5,21 @@ use strict;
 use warnings;
 use Test::More;
 
-eval '
-    use Perl::Metrics::Simple;
-    use File::Find::Rule       ();
-    use File::Find::Rule::Perl ();
-';
+{
+    ## no critic
+    eval '
+        use Perl::Metrics::Simple;
+        use File::Find::Rule       ();
+        use File::Find::Rule::Perl ();
+    ';
+}
 plan skip_all => 'Perl::Metrics::Simple, File::Find::Rule and File::Find::Rule::Perl required' if $@;
 
 # configure this to match your needs
 my $max_complexity = 20;
 my $max_lines      = 80;
 
-my @files    = File::Find::Rule->perl_file->in('..');
+my @files    = File::Find::Rule->perl_file->in(qw/ lib t xt /);
 my $analzyer = Perl::Metrics::Simple->new;
 my @subs;
 
