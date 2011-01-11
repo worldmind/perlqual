@@ -1,8 +1,8 @@
 use inc::Module::Install;
 
-my $main_module = 'lib/Module/Name.pm';
+my $main_module = 'lib/Perl/Test/Code/Quality/Template.pm';
 
-name 'Module-Name';
+name 'Perl-Test-Code-Quality-Template';
 author q{worldmind <world.mind@yahoo.com>};
 license 'perl';
 resources repository => 'git://github.com/worldmind/perl-test-code-quality-template.git';

@@ -1,11 +1,11 @@
-package Module::Name;
+package Perl::Test::Code::Quality::Template;
 
 use warnings;
 use strict;
 
 =head1 NAME
 
-Module::Name - The great new Module::Name!
+Perl::Test::Code::Quality::Template - The great new Perl::Test::Code::Quality::Template!
 
 =head1 VERSION
 
@@ -22,9 +22,9 @@ Quick summary of what the module does.
 
 Perhaps a little code snippet.
 
-    use Module::Name;
+    use Perl::Test::Code::Quality::Template;
 
-    my $foo = Module::Name->new();
+    my $foo = Perl::Test::Code::Quality::Template->new();
     ...
 
 =head1 EXPORT
@@ -55,7 +55,7 @@ worldmind, C<< <world.mind at yahoo.com> >>
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-module-name at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Module-Name>.  I will be notified, and then you'll
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Perl-Test-Code-Quality-Template>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 
@@ -65,7 +65,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Module::Name
+    perldoc Perl::Test::Code::Quality::Template
 
 
 You can also look for information at:
@@ -74,19 +74,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Module-Name>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Test-Code-Quality-Template>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Module-Name>
+L<http://annocpan.org/dist/Perl-Test-Code-Quality-Template>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Module-Name>
+L<http://cpanratings.perl.org/d/Perl-Test-Code-Quality-Template>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Module-Name/>
+L<http://search.cpan.org/dist/Perl-Test-Code-Quality-Template/>
 
 =back
 
@@ -107,4 +107,4 @@ See http://dev.perl.org/licenses/ for more information.
 
 =cut
 
-1; # End of Module::Name
+1; # End of Perl::Test::Code::Quality::Template
