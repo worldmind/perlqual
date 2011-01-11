@@ -1,4 +1,7 @@
+#!/usr/bin/env perl
 use inc::Module::Install;
+use Module::Install::AuthorTests;
+use Module::Install::AuthorRequires;
 
 my $main_module = 'lib/Perl/Test/Code/Quality/Template.pm';
 
