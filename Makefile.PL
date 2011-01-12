@@ -14,14 +14,7 @@ all_from $main_module;
 
 # just for example
 requires(
-    'Catalyst::Runtime'    => '5.80029',
-    'namespace::autoclean' => 0,
-
-    'Catalyst::Action::RenderView'     => 0,
-    'Catalyst::Plugin::ConfigLoader'   => 0,
-    'Catalyst::Plugin::Static::Simple' => 0,
     'Config::General'                  => 0,
-    'Moose'                            => 0,
 );
 
 # just for example
