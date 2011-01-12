@@ -14,12 +14,26 @@ all_pod_files_spelling_ok(qw/ lib t xt /);
 
 __DATA__
 AnnoCPAN
+as_resultset
+Aux
 BLOBs
 CPAN
+cub
+cubuanic
+DateTime
+DBIC
+deflate_datetime
+deserialize
 fs
 FS
+inflate_datetime
 IRC
+Kostyuk
+objectid
+Oleg
 resultset
 RT
-semifor
+schema
+TT
+unix
 worldmind
