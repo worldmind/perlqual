@@ -13,9 +13,7 @@ resources repository => 'git://github.com/worldmind/perl-test-code-quality-templ
 all_from $main_module;
 
 # just for example
-requires(
-    'Config::General'                  => 0,
-);
+requires( 'Config::General' => 0, );
 
 # just for example
 build_requires(
@@ -41,6 +39,7 @@ author_requires(
     'Test::EOL'              => '0.3',
     'Test::Fixme'            => 0,
     'Test::More'             => '0.88',
+    'Test::More::UTF8'       => 0,
     'Test::NoTabs'           => 0,
     'Test::Perl::Critic'     => 0,
     'Test::Pod'              => '1.22',
