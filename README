@@ -1,0 +1,10 @@
+This is set of perl tests for test code quality, if all test passes we know that or code:
+- have no syntax errors
+- have no Windows (R) end of lines and spaces on the end of line
+- use strict and warnings
+- have no FIXME mark
+- have no tabs
+- pass kwalitee test for cpan distribution
+- has cyclomatic complexity and lines count (in subs) no bigger than set in test
+- has valid POD that cover all function (POD pass spellcheck)
+- has test that cover needed part of code

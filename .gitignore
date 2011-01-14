@@ -13,7 +13,9 @@ MANIFEST.bak
 MANIFEST.skip
 pm_to_blib
 pod2htm*.tmp
-README
 .shipit
 *.tar.gz
 tmp/
+Debian_CPANTS.txt
+META.yml
+inc/
