@@ -34,11 +34,21 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
+=head2 new
+
+=cut
+
+sub new {
+    my $class = shift;
+    return bless {}, $class;
+}
+
 =head2 function1
 
 =cut
 
 sub function1 {
+    return 1;
 }
 
 =head2 function2
@@ -46,6 +56,7 @@ sub function1 {
 =cut
 
 sub function2 {
+    return 2;
 }
 
 =head1 AUTHOR
