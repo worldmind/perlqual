@@ -11,5 +11,7 @@ plan skip_all => 'Test::Strict is required' if $@;
 # tweak this to change coverage acceptance level
 my $coverage_threshold = 70;
 
+# shut up warnings from Devel::Cover
+$ENV{DEVEL_COVER_OPTIONS} = '-silent,1';
 all_cover_ok( 70, 't' );
 
