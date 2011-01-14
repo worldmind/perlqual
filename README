@@ -1,4 +1,4 @@
-This is set of perl tests for test code quality, if all test passes we know that or code:
+This is set of perl tests for test code quality, if all test passes we know that our code:
 - have no syntax errors
 - have no Windows (R) end of lines and spaces on the end of line
 - use strict and warnings
