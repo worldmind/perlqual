@@ -13,5 +13,5 @@ my $coverage_threshold = 70;
 
 # shut up warnings from Devel::Cover
 $ENV{DEVEL_COVER_OPTIONS} = '-silent,1';
-all_cover_ok( 70, 't' );
+all_cover_ok( $coverage_threshold, 't' );
 
