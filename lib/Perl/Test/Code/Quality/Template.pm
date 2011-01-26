@@ -59,6 +59,15 @@ sub function2 {
     return 2;
 }
 
+=head2 function3
+
+=cut
+
+sub function3 {
+    my ( $self, $arg ) = @_;
+    return $arg*$arg;
+}
+
 =head1 AUTHOR
 
 worldmind, C<< <world.mind at yahoo.com> >>

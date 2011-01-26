@@ -25,10 +25,8 @@ build_requires(
 
 # just for example
 test_requires(
-    'Test::More' => '0.88',
-    'Test::More' => '0.88',
-    'Test::More' => '0.88',
-    'Test::More' => '0.88',
+    'Test::More'               => '0.88',
+    'Test::LectroTest::Compat' => 0,
 );
 
 author_requires(
@@ -47,10 +45,6 @@ author_requires(
     'Test::Spelling'         => '0.11',
     'Test::Strict'           => 0,
 );
-
-if ($Module::Install::AUTHOR) {
-    system("pod2text $main_module > README") and die $!;
-}
 
 ## catalyst;
 ## install_script glob('script/*.pl');
