@@ -56,7 +56,7 @@ sub function1 {
 =cut
 
 sub function2 {
-    return 2;
+    return { key1 => 'val1', key2 => 'val2' };
 }
 
 =head2 function3

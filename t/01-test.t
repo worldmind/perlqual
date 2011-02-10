@@ -17,7 +17,11 @@ isa_ok( $tpl, $_ );
 
 is( $tpl->function1(), 1, 'function1 result' );
 
-is( $tpl->function2(), 2, 'function2 result' );
+
+my $expected = { key1 => 'val1', key2 => 'val2' };
+my $goted    = $tpl->function2();
+is_deeply( $goted, $expected, 'function2 result' ) or diag explain $goted;
+
 
 # test function many times with autogenerate integer arguments
 my $prop_nonnegative = Property {
