@@ -68,6 +68,15 @@ sub function3 {
     return $arg*$arg;
 }
 
+
+=head2 function4
+
+=cut
+
+sub function4 {
+    die bless { code => 666, message => 'Something wrong', trace => 'stack trace here' }, 'Exception::Something';
+}
+
 =head1 AUTHOR
 
 worldmind, C<< <world.mind at yahoo.com> >>

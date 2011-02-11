@@ -1,9 +1,11 @@
 #!/usr/bin/perl -w
 
 use strict;
-use Test::More tests => 6;
+use Test::More tests => 7;
 use Test::More::UTF8;
 use Test::LectroTest::Compat;
+use Test::Exception;
+
 use lib 'lib';
 
 BEGIN {
@@ -30,3 +32,6 @@ my $prop_nonnegative = Property {
 }, name => "function3 output is non-negative" ;
 
 holds( $prop_nonnegative );
+
+
+throws_ok { $tpl->function4 } 'Exception::Something', 'simple error thrown';
