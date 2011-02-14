@@ -85,6 +85,18 @@ sub function5 {
     sleep 1;
 }
 
+=head2 C<get_date>
+
+  Returns date in needed format
+
+=cut
+sub get_date {
+  my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
+  $mon++;
+  $year += 1900;
+  return sprintf( '%d-%02d-%02d %02d:%02d:%02d', $year, $mon, $mday, $hour, $min, $sec );
+}
+
 =head1 AUTHOR
 
 worldmind, C<< <world.mind at yahoo.com> >>
