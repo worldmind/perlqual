@@ -77,6 +77,14 @@ sub function4 {
     die bless { code => 666, message => 'Something wrong', trace => 'stack trace here' }, 'Exception::Something';
 }
 
+=head2 function5
+
+=cut
+
+sub function5 {
+    sleep 1;
+}
+
 =head1 AUTHOR
 
 worldmind, C<< <world.mind at yahoo.com> >>

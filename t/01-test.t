@@ -1,10 +1,12 @@
 #!/usr/bin/perl -w
 
 use strict;
-use Test::More tests => 7;
+use Test::More tests => 8;
 use Test::More::UTF8;
 use Test::LectroTest::Compat;
 use Test::Exception;
+use Test::Timer;
+
 
 use lib 'lib';
 
@@ -35,3 +37,5 @@ holds( $prop_nonnegative );
 
 
 throws_ok { $tpl->function4 } 'Exception::Something', 'simple error thrown';
+
+time_ok( sub { $tpl->function5(); }, 1, 'function5 must be faster than 1 second');
