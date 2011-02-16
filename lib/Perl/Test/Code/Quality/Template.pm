@@ -15,7 +15,6 @@ Version 0.01
 
 our $VERSION = '0.01';
 
-
 =head1 SYNOPSIS
 
 Quick summary of what the module does.
@@ -65,9 +64,8 @@ sub function2 {
 
 sub function3 {
     my ( $self, $arg ) = @_;
-    return $arg*$arg;
+    return $arg * $arg;
 }
-
 
 =head2 function4
 
@@ -90,11 +88,12 @@ sub function5 {
   Returns date in needed format
 
 =cut
+
 sub get_date {
-  my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
-  $mon++;
-  $year += 1900;
-  return sprintf( '%d-%02d-%02d %02d:%02d:%02d', $year, $mon, $mday, $hour, $min, $sec );
+    my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
+    $mon++;
+    $year += 1900;
+    return sprintf( '%d-%02d-%02d %02d:%02d:%02d', $year, $mon, $mday, $hour, $min, $sec );
 }
 
 =head1 AUTHOR
@@ -156,4 +155,4 @@ See http://dev.perl.org/licenses/ for more information.
 
 =cut
 
-1; # End of Perl::Test::Code::Quality::Template
+1;    # End of Perl::Test::Code::Quality::Template

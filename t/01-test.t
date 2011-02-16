@@ -18,7 +18,7 @@ BEGIN {
 }
 
 
-# check that object is create success
+# check that object is created successfully
 my $tpl = new_ok( $_ );
 isa_ok( $tpl, $_ );
 
