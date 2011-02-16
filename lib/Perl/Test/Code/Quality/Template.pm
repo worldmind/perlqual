@@ -96,6 +96,18 @@ sub get_date {
     return sprintf( '%d-%02d-%02d %02d:%02d:%02d', $year, $mon, $mday, $hour, $min, $sec );
 }
 
+
+=head2 function6
+
+=cut
+
+sub function6 {
+    my $array = [ 42, 711 ];
+    push @{$array}, $array;
+    $array;
+}
+
+
 =head1 AUTHOR
 
 worldmind, C<< <world.mind at yahoo.com> >>
