@@ -1,4 +1,4 @@
-This is set of perl tests for test code quality, if all test passes we know that our code:
+This is set of perl tests for test code quality, if all test passes we know that:
 - module have valid syntax and have strict and warnings pragmas
 - module have only unix line endings and not have whitespaces in the end of line
 - module have no FIXME notes
