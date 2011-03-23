@@ -1,10 +1,28 @@
 This is set of perl tests for test code quality, if all test passes we know that our code:
-- have no syntax errors
-- have no Windows (R) end of lines and spaces on the end of line
-- use strict and warnings
-- have no FIXME mark
-- have no tabs
-- pass kwalitee test for cpan distribution
-- has cyclomatic complexity and lines count (in subs) no bigger than set in test
-- has valid POD that cover all function (POD pass spellcheck)
-- has test that cover needed part of code
+- module have valid syntax and have strict and warnings pragmas
+- module have only unix line endings and not have whitespaces in the end of line
+- module have no FIXME notes
+- module have no soft breakpoints for perl debugger
+- module have no tabs
+- module is conform to our coding style (=perltidy config)
+- module distribution looks good to upload to cpan
+- module has portable file names
+- code units in module have required cyclomatic complexity and required lines of code
+- module code is conform to Perl Best Practice recommendation from Perl::Critic
+- module has POD and it is valid
+- POD cover all methods
+- POD is written on valid human language
+- the tests written for module cover needed percent of code
+
+And we can test that module methods have no memory leaks
+
+Using:
+git clone git@github.com:worldmind/perl-test-code-quality-template.git
+cd perl-test-code-quality-template/
+perl Makefile.PL
+make
+make manifest
+make test
+
+# if you make your module based on this you can install it by
+make install

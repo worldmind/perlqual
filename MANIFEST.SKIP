@@ -1,0 +1,7 @@
+^\.git*
+^blib/
+^cover_db/
+^Debian_CPANTS.txt$
+^inc/
+^pm_to_blib$
+^MANIFEST\.*

@@ -18,9 +18,6 @@ requires( 'Config::General' => 0, );
 # just for example
 build_requires(
     'Test::More' => '0.88',
-    'Test::More' => '0.88',
-    'Test::More' => '0.88',
-    'Test::More' => '0.88',
 );
 
 # just for example
@@ -36,7 +33,6 @@ author_requires(
     'Pod::Coverage'            => '0.21',
     'Test::Exception'          => '0.29',
     'Test::Kwalitee'           => '1.01',
-    'Test::LectroTest::Compat' => 'undef',
     'Test::MockTime'           => '0.09',
     'Test::More'               => '0.96',
     'Test::More::UTF8'         => '0.02',
@@ -51,6 +47,7 @@ author_requires(
     'Test::Pod'                => '1.22',
     'Test::Spelling'           => '0.11',
     'Test::Strict'             => 0,
+    'Test::PerlTidy'           => 0,
 );
 
 ## catalyst;

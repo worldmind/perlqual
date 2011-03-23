@@ -1,0 +1,5 @@
+#--perl-best-practices
+--output-line-ending=unix
+--indent-columns=2
+--maximum-line-length=120
+--noblanks-before-comments

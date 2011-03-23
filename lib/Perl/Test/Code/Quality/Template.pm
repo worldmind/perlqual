@@ -21,10 +21,10 @@ Quick summary of what the module does.
 
 Perhaps a little code snippet.
 
-    use Perl::Test::Code::Quality::Template;
+  use Perl::Test::Code::Quality::Template;
 
-    my $foo = Perl::Test::Code::Quality::Template->new();
-    ...
+  my $foo = Perl::Test::Code::Quality::Template->new();
+  ...
 
 =head1 EXPORT
 
@@ -38,8 +38,8 @@ if you don't export anything, such as for a purely object-oriented module.
 =cut
 
 sub new {
-    my $class = shift;
-    return bless {}, $class;
+  my $class = shift;
+  return bless {}, $class;
 }
 
 =head2 function1
@@ -47,7 +47,7 @@ sub new {
 =cut
 
 sub function1 {
-    return 1;
+  return 1;
 }
 
 =head2 function2
@@ -55,7 +55,7 @@ sub function1 {
 =cut
 
 sub function2 {
-    return { key1 => 'val1', key2 => 'val2' };
+  return { key1 => 'val1', key2 => 'val2' };
 }
 
 =head2 function3
@@ -63,8 +63,8 @@ sub function2 {
 =cut
 
 sub function3 {
-    my ( $self, $arg ) = @_;
-    return $arg * $arg;
+  my ( $self, $arg ) = @_;
+  return $arg * $arg;
 }
 
 =head2 function4
@@ -72,7 +72,7 @@ sub function3 {
 =cut
 
 sub function4 {
-    die bless { code => 666, message => 'Something wrong', trace => 'stack trace here' }, 'Exception::Something';
+  die bless { code => 666, message => 'Something wrong', trace => 'stack trace here' }, 'Exception::Something';
 }
 
 =head2 function5
@@ -80,7 +80,7 @@ sub function4 {
 =cut
 
 sub function5 {
-    sleep 1;
+  sleep 1;
 }
 
 =head2 C<get_date>
@@ -90,23 +90,21 @@ sub function5 {
 =cut
 
 sub get_date {
-    my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
-    $mon++;
-    $year += 1900;
-    return sprintf( '%d-%02d-%02d %02d:%02d:%02d', $year, $mon, $mday, $hour, $min, $sec );
+  my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
+  $mon++;
+  $year += 1900;
+  return sprintf( '%d-%02d-%02d %02d:%02d:%02d', $year, $mon, $mday, $hour, $min, $sec );
 }
-
 
 =head2 function6
 
 =cut
 
 sub function6 {
-    my $array = [ 42, 711 ];
-    push @{$array}, $array;
-    $array;
+  my $array = [ 42, 711 ];
+  push @{$array}, $array;
+  $array;
 }
-
 
 =head1 AUTHOR
 
@@ -125,7 +123,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Perl::Test::Code::Quality::Template
+  perldoc Perl::Test::Code::Quality::Template
 
 
 You can also look for information at:
