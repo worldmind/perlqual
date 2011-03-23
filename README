@@ -17,7 +17,7 @@ This is set of perl tests for test code quality, if all test passes we know that
 And we can test that module methods have no memory leaks
 
 Using:
-git clone git@github.com:worldmind/perl-test-code-quality-template.git
+git clone https://github.com/worldmind/perl-test-code-quality-template.git
 cd perl-test-code-quality-template/
 perl Makefile.PL
 make
