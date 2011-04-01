@@ -17,7 +17,7 @@ plan skip_all => 'Perl::Metrics::Simple, File::Find::Rule and File::Find::Rule::
 
 # configure this to match your needs
 my $max_complexity = 20;
-my $max_lines      = 80;
+my $max_lines      = 40;
 
 my @files    = File::Find::Rule->perl_file->in(qw/ lib t xt /);
 my $analzyer = Perl::Metrics::Simple->new;
