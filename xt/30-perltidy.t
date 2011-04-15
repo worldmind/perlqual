@@ -3,8 +3,10 @@
 
 use strict;
 use warnings;
+use Test::More;
 
-use Test::PerlTidy;
+eval 'use Test::PerlTidy';    ## no critic
+plan skip_all => 'PerlTidy required' if $@;
 
 run_tests(
   path       => 'lib',
