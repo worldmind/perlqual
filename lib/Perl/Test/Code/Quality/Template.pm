@@ -2,6 +2,7 @@ package Perl::Test::Code::Quality::Template;
 
 use warnings;
 use strict;
+use Carp;
 
 =head1 NAME
 
@@ -72,7 +73,7 @@ sub function3 {
 =cut
 
 sub function4 {
-  die bless { code => 666, message => 'Something wrong', trace => 'stack trace here' }, 'Exception::Something';
+  croak bless { code => 666, message => 'Something wrong', trace => 'stack trace here' }, 'Exception::Something';
 }
 
 =head2 function5
