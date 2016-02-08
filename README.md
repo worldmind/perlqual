@@ -39,21 +39,18 @@ dpkg -r perlqual
 
 ## Using
 
-1. Run
+1. Run in your project dir
 ```
 perlqual
 ```
-in your project dir
-2. Run
+2. Outside project dir you can run
 ```
 perlqual <project dir>
 ```
-3. Run
+3. If your libraries not installed run
 ```
 PERL5LIB=./lib perlqual
 ```
-if your libraries not installed
-
 
 ## Configuring
 
