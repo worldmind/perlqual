@@ -19,3 +19,4 @@ tmp/
 Debian_CPANTS.txt
 META.yml
 inc/
+*.deb
