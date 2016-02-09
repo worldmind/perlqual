@@ -63,8 +63,9 @@ Example and default config can be copy-pasted from __DATA__
 section of perlqual script.
 Some tests are disabled in default config!
 
-## TODO
+## Ideas
 
 1. Make copy-paste check based on Code::CutNPaste
 2. Variables names spelling?
-3. my -> Readonly my ?
+3. Immutability testing: my -> Readonly my ?
+4. Unify test to: test_ok($_) for @perl_files;
