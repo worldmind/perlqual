@@ -70,4 +70,4 @@ Some tests are disabled in default config!
 3. Immutability testing: my -> Readonly my ?
 4. Unify test to: test_ok($_) for @perl_files
 5. HTML output option
-6. Deep learned neural network that can recognize good code )
+6. Deep learned neural network that can recognize good code. Big good code base needed.
