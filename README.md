@@ -66,6 +66,7 @@ Some tests are disabled in default config!
 ## Ideas
 
 1. Make copy-paste check based on Code::CutNPaste
-2. Variables names spelling?
+2. Variables names spelling
 3. Immutability testing: my -> Readonly my ?
-4. Unify test to: test_ok($_) for @perl_files;
+4. Unify test to: test_ok($_) for @perl_files
+5. HTML output option
