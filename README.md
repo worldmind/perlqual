@@ -2,7 +2,7 @@
 
 This utility measures 'quality' of perl code.
 Quality here means:
-- code must have unit tests
+- code must have unit tests with needed code coverage
 - code must have low cyclomatic complexity
 - code must be divided on small pieces
 - Perl Best Practice used
@@ -70,3 +70,4 @@ Some tests are disabled in default config!
 3. Immutability testing: my -> Readonly my ?
 4. Unify test to: test_ok($_) for @perl_files
 5. HTML output option
+6. Deep learned neural network that can recognize good code )
