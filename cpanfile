@@ -18,5 +18,5 @@ requires 'Test::Pod::Coverage', '';
 requires 'Test::Portability::Files', '';
 requires 'Test::Spelling', '';
 requires 'Test::Strict', '';
-requires 'Test::Strict', '';
 requires 'YAML', '';
+requires 'Readonly', '';

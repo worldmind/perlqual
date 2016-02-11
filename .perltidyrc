@@ -1,0 +1,6 @@
+-w     # Show all warnings
+--maximum-line-length=120 # our
+
+-b
+-bext='/' # Delete backup if no errors
+

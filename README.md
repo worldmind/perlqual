@@ -49,7 +49,7 @@ perlqual <project dir>
 ```
 3. If your libraries not installed run
 ```
-PERL5LIB=./lib perlqual
+PERL5LIB=./lib perlqual &> perlqual.report
 ```
 
 ## Configuring

@@ -1,0 +1,29 @@
+coverage:
+    enabled: 0
+    min_coverage: 70
+    unit_tests_dir: './t'
+metrics:
+    enabled: 1
+    max_complexity: 20
+    max_lines_in_sub: 40
+best_practice:
+    enabled: 1
+    check_use_warnings: 1
+    check_no_die_used: 0
+    check_portability: 0
+    portability_hyper_strict: 0
+code_style:
+    enabled: 1
+    check_eol: 1
+    check_notabs: 0
+forgotten:
+    enabled: 1
+    check_nofixme: 1
+    check_nobreakpoints: 1
+    check_delmeafter: 1
+distro:
+    enabled: 1
+pod:
+    enabled: 1
+    check_coverage: 0
+    check_spelling: 0

@@ -20,3 +20,5 @@ Debian_CPANTS.txt
 META.yml
 inc/
 *.deb
+MYMETA.*
+perlqual.report
