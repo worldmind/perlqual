@@ -23,7 +23,7 @@ git clone git@github.com:worldmind/perlqual.git
 cd perlqual
 sudo cpanm --installdeps .
 # some deps may require force install
-sudo make install
+perl Makefile.PL;make;make manifest;sudo make install
 ```
 
 If you use Debian based system, instead 'make install' you can use:
